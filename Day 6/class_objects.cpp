@@ -2,7 +2,7 @@
 using namespace std;
 class student{
     private:
-    int reg = 17556;
+    int reg;
 
     public:
     string name;
