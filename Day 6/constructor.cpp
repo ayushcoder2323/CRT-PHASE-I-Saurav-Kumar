@@ -5,7 +5,7 @@ class student{
     string name;
     int rollno;
 student(){
-    name="Riya";
+    name="Ayush";
     rollno=10;
 
 }
