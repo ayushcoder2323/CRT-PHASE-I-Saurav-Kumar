@@ -2,32 +2,50 @@
 using namespace std;
 
 class Area {
-    public:
-    
+    double area;
 
-    Area(int length, int width) {
-        int rectangleArea = length * width;
-        cout << "Area of Rectangle = " << rectangleArea << endl;
+public:
+
+    
+    Area(int length, int breadth) {
+        this->area = length * breadth;
+        rectangle();
     }
 
     
     Area(int side) {
-        int squareArea = side * side;
-        cout << "Area of Square = " << squareArea << endl;
+        this->area = side * side;
+        square();
     }
 
-
+    
     Area(double radius) {
-        double circleArea = 3.14 * radius * radius;
-        cout << "Area of Circle = " << circleArea << endl;
+        this->area = 3.14 * radius * radius;
+        circle();
+    }
+
+    void rectangle() {
+        cout << "Area of Rectangle = " << this->area << endl;
+    }
+
+    void square() {
+        cout << "Area of Square = " << this->area << endl;
+    }
+
+    void circle() {
+        cout << "Area of Circle = " << this->area << endl;
     }
 };
 
 int main() {
 
-    Area r(10, 5);     
-    Area s(4);       
-    Area c(3.5);       
+    int length = 10, breadth = 5;
+    int side = 4;
+    double radius = 3.5;
+
+    Area r(length, breadth);
+    Area s(side);
+    Area c(radius);
 
     return 0;
 }
