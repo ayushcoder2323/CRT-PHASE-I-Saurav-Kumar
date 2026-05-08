@@ -22,7 +22,7 @@ void showArea(Area b)
 int main()
 {
     Area a;
-    a.setSides(5,10);
+    a.setSides(5,100);
     showArea(a);
     return 0;
 }
