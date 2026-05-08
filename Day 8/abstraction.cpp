@@ -15,17 +15,17 @@ public:
     {
         if (amount > balance)
         {
-            cout << "Insufficient Balance" << endl;
+            cout <<"Insufficient Balance"<< endl;
         }
         else
         {
             balance -= amount;
-            cout << "Amount Withdrawn: " << amount << endl;
+            cout <<"Amount Withdrawn: "<<amount<< endl;
         }
     }
     void ShowBalance()
     {
-        cout << "Current Balance: " << balance << endl;
+        cout <<"Current Balance: "<<balance<< endl;
     }
 };
 
