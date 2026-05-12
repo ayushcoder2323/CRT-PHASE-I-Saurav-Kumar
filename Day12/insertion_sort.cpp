@@ -1,6 +1,5 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-
 void Insertion_Sort(int nums[], int n)
 {
     for (int i = 1; i < n; i++)
