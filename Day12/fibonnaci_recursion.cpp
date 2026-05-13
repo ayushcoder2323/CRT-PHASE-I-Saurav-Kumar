@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Recursive function
 int fibonacci(int n)
 {
     
